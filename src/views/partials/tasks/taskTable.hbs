@@ -3,9 +3,11 @@
     <thead>
         <tr>
             <th>N.</th>
-            <th>Tittle</th>
-            <th>Description</th>
-            <th>Operations</th>
+            <th>Familiar</th>
+            <th>Mensaje</th>
+            <th>Ubicación</th>
+            <th>Opciones</th>
+
         </tr>
     </thead>
     <tbody>
@@ -16,6 +18,7 @@
                 {{tittle}}
             </td>
             <td>{{description}}</td>
+            <td>{{description2}}</td>
             <td>
                 {{#if done}}
                 <a href="/tasks/{{_id}}/toggleDone" class="btn btn-dark">Undone</a>

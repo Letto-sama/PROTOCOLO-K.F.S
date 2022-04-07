@@ -2,15 +2,24 @@
     <h3>Ingresa el mensaje</h3>
     <form action="/tasks/add" method="POST">
         <div>
-            <label for="tittle">Envía un mensaje</label>
-            <input type="text" name="tittle" placeholder="tittle" id="tittle"
-                class="form-control rounded-0 bg-dark text-white">
+            <label for="tittle">Di quien eres</label>
+            <select name="tittle" id="tittle" class="form-select rounded-0 bg-dark text-white" aria-label="Familia">
+                <option selected>Familia</option>
+                <option value="Abo">Abo</option>
+                <option value="La familia">La familia</option>
+            </select>
         </div>
         <div>
-            <label for="description">description:</label>
-            <textarea name="description" placeholder="Description"
-                class="form-control rounded-0 bg-dark text-white"></textarea></textarea>
+            <label for="description">Mensaje</label>
+            <textarea name="description" placeholder="Descripción"
+                class="form-control rounded-0 bg-dark text-white"></textarea>
         </div>
+        <div>
+            <label for="description">Ubicación:</label>
+            <textarea name="description2" placeholder="Description" class="form-control rounded-0 bg-dark text-white"
+                id="geolocation"></textarea>
+        </div>
+
         <button class="btn btn-primary btn-lg mt-2">Enviar</button>
     </form>
 </div>
