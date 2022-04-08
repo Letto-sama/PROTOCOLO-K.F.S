@@ -1,0 +1,19 @@
+body{
+    background: #e9ecef;
+}
+
+.estructura_mensajes {
+    display: flex;
+    flex-direction: column;
+}
+
+.redondeo{
+    border-radius: 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.btn_principal_lg {
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 0;
+}

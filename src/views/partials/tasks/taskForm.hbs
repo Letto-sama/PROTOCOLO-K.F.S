@@ -1,10 +1,10 @@
-<div class="card card-body p-4 rounded-0 bg-dark text-white">
+<div class="card card-body p-4 redondeo bg-dark text-white">
     <h3>Ingresa el mensaje</h3>
     <form action="/tasks/add" method="POST">
         <div>
             <label for="tittle">Di quien eres</label>
             <select name="tittle" id="tittle" class="form-select rounded-0 bg-dark text-white" aria-label="Familia">
-                <option selected>Familia</option>
+                <option id="disabledSelect" selected>Escoge quien eres</option>
                 <option value="Abo">Abo</option>
                 <option value="La familia">La familia</option>
             </select>
@@ -20,6 +20,6 @@
                 id="geolocation"></textarea>
         </div>
 
-        <button class="btn btn-primary btn-lg mt-2">Enviar</button>
+        <button class="btn btn-primary btn-lg mt-5 btn_principal_lg">Enviar</button>
     </form>
 </div>
