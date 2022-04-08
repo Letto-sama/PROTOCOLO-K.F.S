@@ -5,7 +5,6 @@ const task = new Schema({
     tittle: {
         type: String,
         required: true,
-        unique: true,
         trim: true
     },
     description: {
